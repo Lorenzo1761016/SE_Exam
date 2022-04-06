@@ -1,0 +1,8 @@
+ricordare di far partire docker prima del JMS:  
+docker pull rmohr/activemq  
+docker run -p 61616:61616 -p 8161:8161 rmohr/activemq 
+
+(provare con sudo per eventuali permessi negati) 
+
+ricordarsi di cambiare il percorso del database sia nel client che nel JMS
+

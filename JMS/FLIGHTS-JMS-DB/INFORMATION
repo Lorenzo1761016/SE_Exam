@@ -1,0 +1,6 @@
+DATABASE  
+Il path del db va cambiato in base a dove viene posizionato  
+La run in questo caso è diversa, ho un thread che dorme
+
+CLIENT
+il path del db va cambiato
