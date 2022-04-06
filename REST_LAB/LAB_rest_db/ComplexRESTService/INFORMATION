@@ -1,0 +1,13 @@
+to create database: 
+go to external terminal -> sqlite3 <nameDB>
+go to db manager class, run main, go to configuration then add the path of the db and "create" to the configuration field 
+ex: \/home/studente/nameDB create
+then run class dbmanager
+To print db, go to configuration and write path db and a random string
+ex: \/home/studente/nameDB 000
+
+to connect db and server:
+go to server main class -> configuration and add path of the db in configuration field
+ex: \/home/studente/nameDB
+
+then go in client and connect to db as normal
