@@ -1,0 +1,31 @@
+DATABASE  
+creare database con 2 tabelle una per vaccini e una per i dettagli delle persone.  
+Buildare  
+Configurare usando il path del db e il comando "create"  
+Runnare  
+per verificare esempi configurare con path db e comando "all"  
+
+
+REST Server  
+dentro al restServer.java si crea la connessione  
+dentro a vaccination.java cèe il costruttore con i metodi get e set per ogni campo e il "toString"  
+dentro a vacconationRepository.java abbiamo setConnection per connessione al database, vengono definite le funzioni getVAccination e findAll  
+dentro vaccinations.java cè la lista dei vaccini e i costruttori associati e il metodo "toString"  
+Buildare e runnare con argomento di configurazione = path del db
+
+
+SOAP WebService  
+dentro soapServer.java si stabilisce la connessione    
+dentro a Person.java definisce gli attributi della persona e crea i costruttori e crea il costruttore Person(con attributi) e Person()  
+dentro a WSImpl.java:  
+OPZIONE 1: si fa la connessione al database e si crea la funzione getPersonDetails che prende le informazioni dalla tabella persons del DB  
+OPZIONE 2: si fa una lista persons usando una Map<String, Person> all'interno della quale si inseriscono i dettagli delle persone  
+           (in questo caso no si passa dal DB). Successivamente si crea la funzione getPersonDetails per prendere i dettagli  
+dentro vaccinations.java si ha la lista dei vaccini con i costruttori  
+Buildare e runnare
+
+
+CLIENT
+dentro Vaccination.java creo la classe con attributi e metodi
+dentro  vaccionations.java ho la lista dei vaccini e i metodi
+dentro Client.java fai connessione a rest e soap. Poi prendi get per i vaccini con getVaccinationList, prendi le persone dal soap con getPerson
