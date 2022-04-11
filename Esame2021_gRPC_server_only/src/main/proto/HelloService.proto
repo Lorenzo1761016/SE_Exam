@@ -1,0 +1,34 @@
+syntax = "proto3";
+option java_multiple_files = true;
+
+package proto;
+
+
+
+message DettagliLibro {
+    string titolo = 1;
+    string autore = 2;
+    string anno= 3;
+    string annonascita = 4;
+}
+
+message IdLibro {
+    string id = 1;
+}
+
+message Ciao {
+    string cliente = 1;
+}
+
+
+message NumeroLibri {
+    string numero = 1;
+}
+
+
+service Tutto {
+
+    rpc unlibro(IdLibro) returns (DettagliLibro);
+
+    rpc damminumero(Ciao) returns (NumeroLibri);
+}
