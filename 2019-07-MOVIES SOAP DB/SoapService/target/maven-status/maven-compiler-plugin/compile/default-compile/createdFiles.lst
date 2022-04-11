@@ -1,0 +1,11 @@
+it/uniroma1/Director.class
+it/uniroma1/DirectorImpl.class
+it/uniroma1/WSImpl.class
+it/uniroma1/Movies.class
+it/uniroma1/WSInterface.class
+it/uniroma1/DirectorMap$DirectorEntry.class
+it/uniroma1/SoapServer.class
+it/uniroma1/DirectorMap.class
+it/uniroma1/Movie.class
+it/uniroma1/DirectorAdapter.class
+it/uniroma1/DirectorMapAdapter.class
